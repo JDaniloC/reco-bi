@@ -1,4 +1,7 @@
-# Projeto de PowerBI
+# Reco BI: PowerBI para ADMs de condomínios
+
+![home image](.github/home.png)
+
 Aplicação de uma administradora de condomínios hipotética para análise de
 inadimplência condominial e seus impactos.
 
@@ -8,16 +11,18 @@ inadimplência condominial e seus impactos.
 
 Os demais dados foram gerados aleatoriamente com certas restrições.
 
+![relations](.github/relations.png)
+
 ## Sobre os dados
 
 Os mesmos foram alterados através de um [script python](./data/parser.ipynb) gerando novos dados que permitam possuir uma relação entre os dados de condomínios, condôminos e faturas.
 Esses dados foram tratados utilizando Pandas e o Power Query do Power BI.
 
-## Como utilizar o Power BI com JSON
+## Como conectar o Power BI com JSON
 Modifique a variável `FonteDados` no PowerQuery com o caminho da pasta que
 contém o arquivo JSON.
 
-## Como utilizar o Power BI com o SQLite
+## Como conectar o Power BI com o SQLite
 Instale o [ODBC Driver](http://www.ch-werner.de/sqliteodbc/) do SQLite e siga
 as instruções de instalação:
 
@@ -27,3 +32,9 @@ O campo `Data Source Name` deve ser `SQLite` para funcionar de forma mais autom�
 
 ![First step](.github/odbc.png)
 ![Second step](.github/powerbi.png)
+
+## Visões
+
+![apartments](.github/apartments.png)
+![debtors](.github/debtors.png)
+![contability](.github/contability.png)
